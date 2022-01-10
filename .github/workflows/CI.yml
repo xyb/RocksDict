@@ -87,7 +87,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        target: [ x86_64, x64 ]
+        target: [ x86_64, i686 ]
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
