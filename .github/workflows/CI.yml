@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, CI-dev ]
 
 jobs:
   macos:
@@ -87,7 +87,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        target: [ x86_64 ]
+        target: [ x86_64, x64 ]
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
